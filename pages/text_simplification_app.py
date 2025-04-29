@@ -34,7 +34,8 @@ def prompt_instruction_format(sample):
 # setup the pipeline
 from transformers import pipeline
 
-model_name = "google/flan-t5-small"
+#model_name = "google/flan-t5-small"
+model_name = "google-t5/t5-small"
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
 tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
 
